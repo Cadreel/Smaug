@@ -50,48 +50,49 @@ public class Jogo extends BasicGameState implements Mover {
 		buttonBlob = new Button(container, blob, 1125, 0, 64,64);
 		buttonSquime = new Button(container, squime1, 1225, 0, 64,64);
 	}
+	
 	public void render(GameContainer container, StateBasedGame game, Graphics g) throws SlickException {
 		map.render(0, 0);
 		background_menu.draw(1125, 0, 192, 600);
 		blob.draw(1125, 0, 64,64);
 		squime1.draw(1225, 0, 64,64);
 		voltar.draw(WIDTH/1.12f, (HEIGHT*0.90f), WIDTH/10, (HEIGHT*0.09f));
-		for(Ally a: allyList){
-			a.sprite.draw();
-			x = 14;
-			y = 0;
-		}
-		
+		allyList.forEach(allyList -> {
+			allyList.draw();
+			g.draw(allyList.hitbox);
+		});
 	}
 
 	public void update(GameContainer container, StateBasedGame game, int delta) throws SlickException {
-		
-		map.getLayerIndex("map");
 		
 		if(container.getInput().isMousePressed(0)){
 			if(botaoVoltar.isMouseOver()){
 				game.enterState(1);
 			}
-			
+
 			if(buttonBlob.isMouseOver()){
-				allyList.add(new Ally());
+				allyList.add(new Ally(14, 0, 69, 28));
 				System.out.println("blob");
 				
 			}
 			
 			if(buttonSquime.isMouseOver()){
-				allyList.add(new Squime());
+				//allyList.add(new Squime());
 				System.out.println("squime");
 			}
 		}
-			move(69,28);
+		
+		allyList.forEach(allyList -> {
+			allyList.update(delta);
+		});
+		allyList.removeIf(allyList -> allyList.xAtual == allyList.tileX && allyList.yAtual == allyList.tileY);
 	}
-	
-	
+
+	/*
 	public void move(int tileX, int tileY) throws SlickException{
 		for(Ally a: allyList){
 		Path path = pathFinder.findPath(a, x, y, tileX, tileY);
-		System.out.println(allyList);
+
 		if(path != null && pathIndex < path.getLength()){
 			if(path.getStep(pathIndex).getX()> path.getStep(pathIndex-1).getX()){
 				a.sprite = a.walkRight;
@@ -109,7 +110,6 @@ public class Jogo extends BasicGameState implements Mover {
 				a.sprite = a.walkDown;
 				pathIndex = 1;
 				path = null;
-				
 			}
 			x = path.getX(pathIndex);
 			y = path.getY(pathIndex);
@@ -118,7 +118,6 @@ public class Jogo extends BasicGameState implements Mover {
 		else{
 			path = null;
 			a.sprite.stop();
-			
 		}
 		try {
 			Thread.sleep(250);
@@ -129,6 +128,7 @@ public class Jogo extends BasicGameState implements Mover {
 		break;
 		}
 	}
+	*/
 
 	public int getID() {
 		return 2;

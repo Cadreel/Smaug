@@ -4,11 +4,11 @@ import org.newdawn.slick.Animation;
 import org.newdawn.slick.Image;
 import org.newdawn.slick.SlickException;
 
-public class Squime extends Ally {
+public class Squime {
 
 	public Squime() throws SlickException {
-		super();
-		
+		//super(pathIndex, pathIndex, pathIndex, pathIndex);
+		/*
 		Image [] up = {new Image("sprites/facedown00_128_px.png"), new Image("sprites/facedown00_128_px.png"),new Image("sprites/facedown00_128_px.png"), new Image("sprites/facedown00_128_px.png")};
 		Image [] down = {new Image("sprites/facedown00_128_px.png"), new Image("sprites/facedown00_128_px.png"),new Image("sprites/facedown00_128_px.png"), new Image("sprites/facedown00_128_px.png")};
 		Image [] left = {new Image("sprites/facedown00_128_px.png"), new Image("sprites/facedown00_128_px.png"),new Image("sprites/facedown00_128_px.png"), new Image("sprites/facedown00_128_px.png")};
@@ -20,6 +20,7 @@ public class Squime extends Ally {
 		walkRight = new Animation(right, 250, true);
 		
 		sprite = walkDown;
+		*/
 	}
 
 }

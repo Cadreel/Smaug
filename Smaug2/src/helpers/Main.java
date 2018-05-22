@@ -20,7 +20,7 @@ public class Main extends StateBasedGame {
 		screen =  new AppGameContainer(this);
 		screen.setDisplayMode((int)WIDTH, (int)HEIGHT, false);
 		screen.setAlwaysRender(true);
-		screen.setShowFPS(false);
+		screen.setShowFPS(true);
 		screen.start();
 	}
 
