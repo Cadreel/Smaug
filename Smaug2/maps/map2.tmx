@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" tiledversion="1.1.4" orientation="orthogonal" renderorder="left-up" width="35" height="19" tilewidth="32" tileheight="32" infinite="0" nextobjectid="1">
+ <tileset firstgid="1" name="scifiRTS_spritesheet@2" tilewidth="32" tileheight="32" tilecount="992" columns="31">
+  <image source="scifiRTS_spritesheet@2.png" width="1010" height="1024"/>
+ </tileset>
+ <layer name="chao" width="35" height="19">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAACu3DMQ0AAAwEoRvev+aa6AgJq6aqqo8PZwnCa2QKAAA=
+  </data>
+ </layer>
+ <layer name="objetos" width="35" height="19">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAACu3VQQpAIQgEUIPuv/Rm3adFfIiQtH45LhqY/YNSORExuJla0I5n0S1ZqadlFi/XZylJrmRC/ZfRhbT0pigWDmq5NWurFsuseVhWZm3H9HfvWkzWPXryBkgmLaPrlMX6ppr5hmXXjbZEbQXdQLkvZAoAAA==
+  </data>
+ </layer>
+</map>

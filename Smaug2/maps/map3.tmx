@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" tiledversion="1.1.4" orientation="orthogonal" renderorder="left-up" width="35" height="19" tilewidth="32" tileheight="32" infinite="0" nextobjectid="1">
+ <tileset firstgid="1" name="map2" tilewidth="32" tileheight="32" tilecount="992" columns="31">
+  <image source="map2.png" width="1010" height="1024"/>
+ </tileset>
+ <tileset firstgid="993" name="map2" tilewidth="32" tileheight="32" tilecount="665" columns="35">
+  <image source="map2.png" width="1120" height="608"/>
+ </tileset>
+ <layer name="map" width="35" height="19">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAACg3TY4MYBAAA0Gu3u9m2bdu2bdu2bauGms2aba9m27bX+/B+wrsTGBBwl3vc5wEPecRjnvCUZzznBS95xWve8JZ3vOcDH/nEZ77wlW985wc/+UVAyICA3whBICEJIphQhCYMYQlHeCIQkUhEJgpRiUZ0YhCTWMQmDnGJR3wSkJBEJCYJSUlGclKQklSkJg1pSUd6MpCRTGQmC1nJRnZykJNc5CYPeclHfgpQkEIUpghFKUZxSlCSUpSmDGUpR3kqUJFKVKYKValGdWpQk1rUpg51qUd9GtCQRjSmCU1pRnNa0JJWtKYNbWlHezrQkU50pgtd6UZ3etCTXvSmD33pR38GMJBBDGYIQxnGcEYwklGMZgxjGcd4JjCRSUxmClOZxnRmMJNZzGYOc5nH7/zBfBawkEX8yV8sZglLWcZyVrCSVaxmDWtZx3o2sJFNbGYLf/MPW9nGdnawk13sZg972cd+DnCQQxzmCEc5xnFOcJJTnOYMZznHv/zHeS5wkUtc5gpXucZ1bnCTW9zmDne5x30e8JBHPOYJT3nGc17wkle85g1vecd7PvCRT3zmC1/5xnd+8JNfBAT5TwgCCUkQwYQiNGEISzjCE4GIRCIyUYhKNKITg5jEIjZxiEs84pOAhCQiMUlISjKSk4KUpCI1aUhLOtKTgYxkIjNZyEo2spODnOQiN3nISz7yU4CCFKIwRShKMYpTgpKUojRlKEs5ylOBilSiMlWoSjWqU4Oa1KI2dahLPerTgIY0ojFNaEozmtOClrSiNW1oSzva04GOdKIzXehKN7rTg570ojd96Es/+jOAgQxiMEMYyjCGM4KRjGI0YxjLOMYzgYlMYjJTmMo0pjODmcxiNnOYyzx+5w/ms4CFLOJP/mIxS1jKMpazgpWsYjVrWMs61rOBjWxiM1v4m3/Yyja2s4Od7GI3e9jLPvZzgIMc4jBHOMoxjnOCk5ziNGc4yzn+5T/Oc4GLXOIyV7jKNa5zg5vc4jZ3uMs97vOAhzziMU94yjOe84KXvOI1b3jLO97zgY984jNf+Mo3vvODn/wiINh/QhBISIIIJhShCUNYwhGeCEQkEpGJQlSiEZ0YxCQWsYlDXOIRnwQkJBGJSUJSkpGcFKQkFalJQ1rSkZ4MZCQTmclCVrKRnRzkJBe5yUNe8pGfAhSkEIUpQlGKUZwSlKQUpSlDWcpRngpUpBKVqUJVqlGdGtSkFrWpQ13qUZ8GNKQRjWlCU5rRnBa0pBWtaUNb2tGeDnSkE53pQle60Z0e9KQXvenD/2UARExkCgAA
+  </data>
+ </layer>
+ <layer name="chao" width="35" height="19">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAACmNgwA30WPBI0hmMugU7GHULdjDqFuxg1C3YwahbsIPB5hYYHiwA2U2k4MEChrp7R8HgBwA46D/kZAoAAA==
+  </data>
+ </layer>
+</map>
